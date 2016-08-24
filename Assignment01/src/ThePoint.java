@@ -1,80 +1,59 @@
 
 public class ThePoint {
 	
-	private int pointX1;
-	private int pointY1;
-	private int pointX2;
-	private int pointY2;
-	private int distance;
+	private int pointX;
+	private int pointY;
+
 	
 	// No-arg constructor?
 	public ThePoint(){
 		
-		setPointX1(0);
-		setPointX2(0);
-		setPointY1(0);
-		setPointY2(0);
-		
-		
+		setPointX(0);
+		setPointY(0);
+
 	}
 	
 	
-	public ThePoint( int pointX1, int pointY1, int pointX2, int pointY2 ) {
+	public ThePoint( int pointX, int pointY ) {
 		
-		super(); /* <----- Don't know what this does... it was automatically generated */
-		this.pointX1 = pointX1;
-		this.pointY1 = pointY1;
-		this.pointX2 = pointX2;
-		this.pointY2 = pointY2;
+		super(); 
+		this.pointX = pointX;
+		this.pointY = pointY;
+	
 	}
 
 
-	public int getPointX1() {
-		return pointX1;
+	public int getPointX() {
+		return pointX;
 	}
 
 
-	public void setPointX1(int pointX1) {
-		this.pointX1 = pointX1;
+	public void setPointX(int pointX) {
+		this.pointX = pointX;
 	}
 
 
-	public int getPointY1() {
-		return pointY1;
+	public int getPointY() {
+		return pointY;
 	}
 
 
-	public void setPointY1(int pointY1) {
-		this.pointY1 = pointY1;
-	}
-
-
-	public int getPointX2() {
-		return pointX2;
-	}
-
-
-	public void setPointX2(int pointX2) {
-		this.pointX2 = pointX2;
-	}
-
-
-	public int getPointY2() {
-		return pointY2;
-	}
-
-
-	public void setPointY2(int pointY2) {
-		this.pointY2 = pointY2;
-	}
-	double getDistance(){
+	public void setPointY(int pointY) {
+		this.pointY = pointY;
 		
-		double sum = ( (Math.pow(pointX2 - pointX1 , 2) + (Math.pow(pointY2 - pointY1, 2))) );
+	}
+
+
+
+	 double getDistance( ThePoint point1, ThePoint point2 ){
+		
+		double sum = ( Math.pow(point2.pointX + point1.pointX, 2) + Math.pow(point2.pointX + point1.pointX, 2) );
 		
 		double distance = Math.sqrt(sum);
 		
 		return distance;
-	}
-	
 
+	}
 }
+
+
