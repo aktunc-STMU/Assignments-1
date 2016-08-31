@@ -45,7 +45,7 @@ public class ThePoint {
 
 
 
-	 double getDistance( ThePoint point1, ThePoint point2 ){
+	 public static double getDistance( ThePoint point1, ThePoint point2 ){
 		
 		double sum = ( Math.pow(point2.pointX + point1.pointX, 2) + Math.pow(point2.pointX + point1.pointX, 2) );
 		
