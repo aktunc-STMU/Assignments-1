@@ -54,6 +54,12 @@ public class ThePoint {
 		return distance;
 
 	}
+	
+	/*
+	It would be better to write the distance using public double distance(p2) {  
+	
+	you can use p1.distance(p2); This may be the most object-oriented way to write this program as no static methods are used.
+	*/
 }
 
 
